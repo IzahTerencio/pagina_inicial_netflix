@@ -1,0 +1,55 @@
+/* Declarando variáveis (pois serão comumente utilizadas no projeto) na raiz do documento */
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+/*RESET CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Limita os elementos a ficarem contidos dentro da caixa */
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex; /* Para utilizar o Flex-Box, tem a tendência de setar tudo em linha */
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+
+/*DEFININDO COISAS RELACIONADAS AO BANNER PRINCIPAL*/
+.principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%) , url('/img/orange_is_the_new_black.jpg');
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /*Elementos um embaixo do outro*/
+    justify-content: center;
+    align-items: flex-start; /*Elementos começam sempre da esquerda*/
+        
+}
